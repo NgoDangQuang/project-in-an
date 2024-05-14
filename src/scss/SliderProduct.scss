@@ -1,0 +1,80 @@
+.container-flash-sale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    .flash-sale {
+        width: 1300px;
+        background-color: white;
+        border-top: 2px solid #de0985;
+        .title {
+            color: red;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .slider-product {
+            overflow: hidden;
+            gap: 10px;
+            .slide-item {
+                width: fit-content;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                }
+                img {
+                    width: 260px;
+                    height: 220px;
+                }
+                .second-img {
+                    display: none;
+                }
+                .category {
+                    padding: 10px 20px 20px 20px;
+                    text-align: center;
+                    color: #de0985;
+                    font-weight: 600;
+                }
+                &:hover {
+                    .img-first {
+                        display: none;
+                    }
+                    .second-img {
+                        display: inherit;
+                    }
+                }
+            }
+            .react-multi-carousel-track {
+                gap: 10px;
+            }
+            .react-multiple-carousel__arrow--left {
+                left: 20px;
+            }
+            .react-multiple-carousel__arrow--right {
+                right: 20px;
+            }
+        }
+        .anticon {
+            opacity: 0.7;
+            font-size: 40px;
+            svg {
+                color: #de0985;
+            }
+        }
+        .slick-prev {
+            inset-inline-start: 20px;
+        }
+        .slick-next {
+            inset-inline-end: 40px;
+        }
+        .ant-carousel .slick-next::after,
+        .ant-carousel .slick-prev::after {
+            display: none;
+        }
+        .ant-carousel .slick-dots li button {
+            opacity: 0.7;
+            background-color: white;
+            height: 5px;
+        }
+    }
+}

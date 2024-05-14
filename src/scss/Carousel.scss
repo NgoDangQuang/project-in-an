@@ -1,0 +1,30 @@
+.carousel {
+    .anticon {
+        opacity: 0.7;
+        font-size: 40px;
+        svg {
+            color: #de0985;
+        }
+    }
+    .slick-prev {
+        inset-inline-start: 20px;
+    }
+    .slick-next {
+        inset-inline-end: 40px;
+    }
+    .ant-carousel .slick-next::after,
+    .ant-carousel .slick-prev::after {
+        display: none;
+    }
+    .ant-carousel .slick-dots li button {
+        opacity: 0.7;
+        background-color: white;
+        height: 5px;
+    }
+    .slide-item {
+        width: 100vw;
+        img {
+            width: 100%;
+        }
+    }
+}
