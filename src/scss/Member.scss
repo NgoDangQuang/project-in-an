@@ -1,0 +1,49 @@
+.member-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.member {
+    width: 1300px;
+    background-color: white;
+    .title {
+        padding: 20px;
+        font-size: 20px;
+        color: #de0985;
+        font-weight: 600;
+    }
+    .member-groups {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 80px 50px;
+        .member-item {
+            text-align: center;
+            .avt {
+                width: 180px;
+                height: 180px;
+                border-radius: 100%;
+                overflow: hidden;
+                margin-bottom: 10px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    height: fit-content;
+                }
+            }
+            .name {
+                font-size: 20px;
+                font-weight: 600;
+                color: #de0985;
+            }
+            .sdt {
+                .icon-phone {
+                    rotate: 90deg;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+}

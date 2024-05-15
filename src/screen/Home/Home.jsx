@@ -5,6 +5,9 @@ import "./../../scss/Home.scss";
 import { CarouselSlider } from "./Carousel";
 import { SliderProduct } from "./SliderProduct";
 import { Information } from "./Information";
+import { Calculator } from "./Calculator";
+import { Member } from "./Memer";
+import { Footer } from "./Footer";
 
 export const Home = () => {
   return (
@@ -18,6 +21,9 @@ export const Home = () => {
       <SliderProduct data={DataFlashSale} title="FLASH SALE" />
       <SliderProduct data={DataFlashSale} title="SẢN PHẨM HOT" />
       <Information />
+      <Calculator />
+      <Member />
+      <Footer />
       <div style={{ height: "300px" }}></div>
     </div>
   );

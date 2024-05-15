@@ -9,6 +9,11 @@ import fs4 from "./../asset/img/fs4.jpg";
 import fs5 from "./../asset/img/fs5.jpg";
 import fs6 from "./../asset/img/fs6.jpg";
 import fs7 from "./../asset/img/fs7.jpg";
+import member1 from "./../asset/img/member-1.jpg";
+import member2 from "./../asset/img/member-2.jpg";
+import member3 from "./../asset/img/member-3.png";
+import member4 from "./../asset/img/member-4.jpg";
+import member5 from "./../asset/img/member-5.jpg";
 import { CheckOutlined, TeamOutlined, TruckOutlined } from "@ant-design/icons";
 
 export const DataSlider = [
@@ -100,5 +105,38 @@ export const reasons = [
     title: "Chất lượng in luôn được đảm bảo",
     description:
       "An Nhân la công ty tiên phong sử dụng các thiết bị tiên tiến nhất trong ngành in kỹ thuật số.",
+  },
+];
+
+export const member = [
+  {
+    name: "Phương Thơ",
+    sdt: "089 89 89 441",
+    mail: "phuongtho@annhan.vn",
+    avt: member1,
+  },
+  {
+    name: "Phương Thơ",
+    sdt: "089 89 89 441",
+    mail: "phuongtho@annhan.vn",
+    avt: member2,
+  },
+  {
+    name: "Phương Thơ",
+    sdt: "089 89 89 441",
+    mail: "phuongtho@annhan.vn",
+    avt: member5,
+  },
+  {
+    name: "Phương Thơ",
+    sdt: "089 89 89 441",
+    mail: "phuongtho@annhan.vn",
+    avt: member4,
+  },
+  {
+    name: "Phương Thơ",
+    sdt: "089 89 89 441",
+    mail: "phuongtho@annhan.vn",
+    avt: member5,
   },
 ];

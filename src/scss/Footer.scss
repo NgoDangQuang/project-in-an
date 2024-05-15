@@ -1,0 +1,54 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.footer {
+    width: 1300px;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    .infor-groups {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .infor-item {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .title {
+                color: #de0985;
+                font-size: 22px;
+                font-weight: 600;
+            }
+            .company-name {
+                font-size: 26px;
+            }
+            .content {
+                font-size: 16px;
+                font-weight: 500;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        transition: 0.4s color ease;
+                        color: #de0985;
+                    }
+                }
+            }
+        }
+    }
+    .google-map {
+        height: 400px;
+        width: 60%;
+        background-color: pink;
+        .google-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+}
