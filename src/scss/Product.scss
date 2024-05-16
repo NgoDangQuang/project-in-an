@@ -1,0 +1,16 @@
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 40px;
+    background-color: white;
+}
+.product-page {
+    width: 1300px;
+    .title {
+        padding: 20px 10px;
+        font-size: 20px;
+        color: #de0985;
+        font-weight: 600;
+    }
+}

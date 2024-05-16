@@ -1,0 +1,31 @@
+.layout-product {
+    .product-item {
+        .image {
+            border: 1px solid #de0985;
+            overflow: hidden;
+            border-radius: 5px;
+            img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+        .title-item {
+            padding-top: 5px;
+            font-size: 18px;
+            color: #de0985;
+            font-weight: 600;
+            text-align: center;
+        }
+        .img-2 {
+            display: none;
+        }
+        &:hover {
+            .img-1 {
+                display: none;
+            }
+            .img-2 {
+                display: flex;
+            }
+        }
+    }
+}

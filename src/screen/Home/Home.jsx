@@ -2,12 +2,10 @@ import { Link } from "react-router-dom";
 import { DataFlashSale, DataSlider } from "../../utils";
 import banner from "./../../asset/img/banner-qc.jpg";
 import "./../../scss/Home.scss";
-import { CarouselSlider } from "./Carousel";
-import { SliderProduct } from "./SliderProduct";
-import { Information } from "./Information";
 import { Calculator } from "./Calculator";
-import { Member } from "./Memer";
-import { Footer } from "./Footer";
+import { CarouselSlider } from "./Carousel";
+import { Information } from "./Information";
+import { SliderProduct } from "./SliderProduct";
 
 export const Home = () => {
   return (
@@ -22,9 +20,6 @@ export const Home = () => {
       <SliderProduct data={DataFlashSale} title="SẢN PHẨM HOT" />
       <Information />
       <Calculator />
-      <Member />
-      <Footer />
-      <div style={{ height: "300px" }}></div>
     </div>
   );
 };

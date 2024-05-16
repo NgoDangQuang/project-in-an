@@ -1,0 +1,67 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gap-10 {
+    gap: 10px;
+}
+.container {
+    background-color: white;
+    padding: 10px 0px;
+    justify-content: center;
+}
+.header-layout {
+    width: 100%;
+    background-color: white;
+    .logo {
+        width: 20%;
+        margin-right: 20px;
+        justify-content: end;
+        img {
+            width: 120px;
+        }
+    }
+    .menu {
+        width: 80%;
+        .top-content {
+            height: 50%;
+            background-color: #de0985;
+            padding: 15px;
+            justify-content: space-around;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            .item {
+                padding: 0px 20px;
+            }
+            .mail {
+                font-weight: bold;
+            }
+            .company-name {
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        .menu-items {
+            height: 50%;
+            background-color: white;
+            .item {
+                padding: 15px 20px;
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: #757171;
+                    &:hover {
+                        color: #de0985;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

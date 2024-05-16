@@ -11,9 +11,16 @@ import fs6 from "./../asset/img/fs6.jpg";
 import fs7 from "./../asset/img/fs7.jpg";
 import member1 from "./../asset/img/member-1.jpg";
 import member2 from "./../asset/img/member-2.jpg";
-import member3 from "./../asset/img/member-3.png";
 import member4 from "./../asset/img/member-4.jpg";
 import member5 from "./../asset/img/member-5.jpg";
+import product1 from "./../asset/img/product-1.jpg";
+import product2 from "./../asset/img/product-2.jpg";
+import sticker1 from "./../asset/img/sticker1.jpg";
+import sticker2 from "./../asset/img/sticker2.jpg";
+import sticker3 from "./../asset/img/sticker3.jpg";
+import sticker4 from "./../asset/img/sticker4.jpg";
+import sticker5 from "./../asset/img/sticker5.jpg";
+import sticker6 from "./../asset/img/sticker6.jpg";
 import { CheckOutlined, TeamOutlined, TruckOutlined } from "@ant-design/icons";
 
 export const DataSlider = [
@@ -138,5 +145,191 @@ export const member = [
     sdt: "089 89 89 441",
     mail: "phuongtho@annhan.vn",
     avt: member5,
+  },
+];
+
+export const products = [
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+  {
+    title: "Ấn phẩm quảng cáo",
+    img1: product1,
+    img2: product2,
+    url: "",
+  },
+];
+
+export const Stickers = [
+  {
+    title: "Tem bảo hành, tem vỡ",
+    img1: sticker1,
+    img2: sticker2,
+    url: "",
+  },
+  {
+    title: "Tem bảo hành, tem vỡ",
+    img1: sticker3,
+    img2: sticker4,
+    url: "",
+  },
+  {
+    title: "Tem bảo hành, tem vỡ",
+    img1: sticker5,
+    img2: sticker6,
+    url: "",
+  },
+  {
+    title: "Tem bảo hành, tem vỡ",
+    img1: sticker2,
+    img2: sticker1,
+    url: "",
+  },
+  {
+    title: "Tem bảo hành, tem vỡ",
+    img1: sticker4,
+    img2: sticker3,
+    url: "",
+  },
+  {
+    title: "Tem bảo hành, tem vỡ",
+    img1: sticker6,
+    img2: sticker5,
+    url: "",
+  },
+  {
+    title: "Tem bảo hành, tem vỡ",
+    img1: sticker4,
+    img2: sticker6,
+    url: "",
+  },
+  {
+    title: "Tem bảo hành, tem vỡ",
+    img1: sticker2,
+    img2: sticker3,
+    url: "",
+  },
+  {
+    title: "Tem bảo hành, tem vỡ",
+    img1: sticker5,
+    img2: sticker2,
+    url: "",
+  },
+  {
+    title: "Tem bảo hành, tem vỡ",
+    img1: sticker2,
+    img2: sticker6,
+    url: "",
   },
 ];
