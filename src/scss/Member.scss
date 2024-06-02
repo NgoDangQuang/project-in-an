@@ -11,7 +11,7 @@
     .title {
         padding: 20px;
         font-size: 20px;
-        color: #de0985;
+        color: var(--text-color);
         font-weight: 600;
     }
     .member-groups {
@@ -36,7 +36,7 @@
             .name {
                 font-size: 20px;
                 font-weight: 600;
-                color: #de0985;
+                color: var(--text-color);
             }
             .sdt {
                 .icon-phone {

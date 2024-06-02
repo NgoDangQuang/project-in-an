@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
-import { DataFlashSale, DataSlider } from "../../utils";
 import banner from "./../../asset/img/banner-qc.jpg";
 import "./../../scss/Home.scss";
 import { Calculator } from "./Calculator";
 import { CarouselSlider } from "./Carousel";
 import { Information } from "./Information";
 import { SliderProduct } from "./SliderProduct";
+import { DataSlider } from "../../utils/sliderBanner";
+import { DataFlashSale } from "../../utils/flashSaleData";
+import { DataHotProduct } from "../../utils/hotProduct";
 
 export const Home = () => {
   return (
@@ -17,7 +19,7 @@ export const Home = () => {
         </Link>
       </div>
       <SliderProduct data={DataFlashSale} title="FLASH SALE" />
-      <SliderProduct data={DataFlashSale} title="SẢN PHẨM HOT" />
+      <SliderProduct data={DataHotProduct} title="SẢN PHẨM HOT" />
       <Information />
       <Calculator />
     </div>

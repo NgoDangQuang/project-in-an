@@ -6,7 +6,7 @@
     .flash-sale {
         width: 1300px;
         background-color: white;
-        border-top: 2px solid #de0985;
+        border-top: 2px solid var(--text-color);
         .title {
             color: red;
             padding: 10px 20px;
@@ -25,22 +25,35 @@
                 img {
                     width: 260px;
                     height: 220px;
+                    transition: all 0.4s ease-in-out;
                 }
+
+                .img-first {
+                    opacity: 1;
+                    visibility: visible;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
                 .second-img {
-                    display: none;
+                    opacity: 0;
+                    visibility: visible;
                 }
                 .category {
                     padding: 10px 20px 20px 20px;
                     text-align: center;
-                    color: #de0985;
+                    color: var(--text-color);
                     font-weight: 600;
                 }
                 &:hover {
                     .img-first {
-                        display: none;
+                        opacity: 0;
+                        visibility: hidden;
                     }
+
                     .second-img {
-                        display: inherit;
+                        opacity: 1;
                     }
                 }
             }
@@ -58,7 +71,7 @@
             opacity: 0.7;
             font-size: 40px;
             svg {
-                color: #de0985;
+                color: var(--text-color);
             }
         }
         .slick-prev {

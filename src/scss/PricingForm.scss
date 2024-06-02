@@ -1,0 +1,53 @@
+.pricing-form {
+  border: 1px solid var(--primary-color);
+  margin-top: 20px;
+  border-radius: 3px;
+  .title {
+    padding: 10px 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    text-align: center;
+  }
+  .form {
+    padding: 0px 10px 10px 10px;
+    .label-option {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+    .ant-select {
+      width: 100%;
+    }
+    .ant-select-selector {
+      border-radius: 3px;
+    }
+  }
+
+  .result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    .button {
+      width: 100px;
+      padding: 8px;
+      background-color: var(--primary-color);
+      border: none;
+      border-radius: 3px;
+      color: white;
+      font-size: 16px;
+    }
+
+    .price-product {
+      width: calc(100% - 170px);
+      border-bottom: 2px solid var(--primary-color);
+      margin-left: 20px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+}

@@ -9,9 +9,9 @@ export const CarouselSlider = ({ data }) => {
         arrows
         infinite={true}
         autoplaySpeed={3000}
-        autoplay={false}
-        effect="fade"
-        speed={500}
+        autoplay
+        effect="scrollx"
+        speed={1000}
         nextArrow={<RightCircleFilled />}
         prevArrow={<LeftCircleFilled />}
         dots={{ className: "dots-icon" }}

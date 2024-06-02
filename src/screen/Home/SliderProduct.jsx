@@ -31,21 +31,21 @@ export const SliderProduct = ({ data, title }) => {
             responsive={responsive}
             draggable
             infinite
-            transitionDuration={200}
+            transitionDuration={5000}
             autoPlay
           >
             {data?.map((item) => {
               return (
                 <div className="slide-item">
-                  <Link to={item?.link}>
+                  <Link to={`san-pham/${item?.url}`}>
                     <img
-                      src={item?.img}
-                      alt={item?.alt}
+                      src={item?.imgs[0]}
+                      alt={item?.title}
                       className="img-first"
                     />
                     <img
-                      src={item?.imgSecond}
-                      alt={item?.alt}
+                      src={item?.imgs[1]}
+                      alt={item?.title}
                       className="second-img"
                     />
                     <div className="category">{item?.title}</div>

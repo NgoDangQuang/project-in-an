@@ -12,8 +12,16 @@ export const LayoutProduct = ({ data }) => {
               <Link to={item?.url}>
                 <div className="product-item">
                   <div className="image">
-                    <img src={item?.img1} alt={item?.title} className="img-1" />
-                    <img src={item?.img2} alt={item?.title} className="img-2" />
+                    <img
+                      src={item?.imgs[0]}
+                      alt={item?.title}
+                      className="img-1"
+                    />
+                    <img
+                      src={item?.imgs[1]}
+                      alt={item?.title}
+                      className="img-2"
+                    />
                   </div>
                   <div className="title-item">{item?.title}</div>
                 </div>

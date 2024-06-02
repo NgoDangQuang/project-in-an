@@ -26,7 +26,7 @@
         width: 80%;
         .top-content {
             height: 50%;
-            background-color: #de0985;
+            background-color: var(--primary-color);
             padding: 15px;
             justify-content: space-around;
             color: white;
@@ -48,6 +48,7 @@
         .menu-items {
             height: 50%;
             background-color: white;
+            padding-right: 100px;
             .item {
                 padding: 15px 20px;
                 a {
@@ -56,7 +57,7 @@
                     text-decoration: none;
                     color: #757171;
                     &:hover {
-                        color: #de0985;
+                        color: var(--text-color);
                         font-weight: 600;
                         cursor: pointer;
                     }

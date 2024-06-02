@@ -1,6 +1,6 @@
 .container-information {
     background-color: white;
-    padding: 40px 0px;
+    padding: 50px 0px;
     margin-top: 20px;
 }
 .information {
@@ -14,15 +14,17 @@
         margin: 0 auto;
         margin-bottom: 30px;
         display: inline-block;
-        border-bottom: 3px dashed #de0985;
+        border-bottom: 3px dashed var(--text-color);
     }
     .reasons {
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: space-between;
-        gap: 40px;
+        gap: 20px;
         .item {
+            align-items: start;
             gap: 10px;
+            width: 33%;
             .layout-icon {
                 background-color: rgb(250, 250, 210);
                 border-radius: 50%;
@@ -32,13 +34,13 @@
                     align-items: center;
                     justify-content: center;
                     font-size: 40px;
-                    color: #de0985;
+                    color: var(--text-color);
                 }
             }
             .content {
                 .title-content {
                     margin-bottom: 10px;
-                    color: #de0985;
+                    color: var(--text-color);
                     font-size: 16px;
                     font-weight: 500;
                 }
