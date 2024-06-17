@@ -2,14 +2,20 @@
     .product-item {
         position: relative;
         width: 100%;
-        .image {
+
+
+        .image-product-item {
             overflow: hidden;
+            border-radius: 5px;
+
             img {
                 width: 100%;
                 height: 200px;
                 overflow: hidden;
+                border-radius: 5px;
                 object-fit: cover;
                 transition: all 0.5s ease-in-out;
+
                 &:first-child {
                     opacity: 1;
                     visibility: visible;
@@ -23,6 +29,7 @@
                     visibility: visible;
                 }
             }
+
             &:hover {
                 img:first-child {
                     opacity: 0;
@@ -34,8 +41,8 @@
                 }
             }
         }
+
         .title-item {
-            padding-top: 5px;
             font-size: 18px;
             color: var(--text-color);
             font-weight: 600;

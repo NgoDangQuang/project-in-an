@@ -8,7 +8,7 @@ export const CarouselSlider = ({ data }) => {
       <Carousel
         arrows
         infinite={true}
-        autoplaySpeed={3000}
+        autoplaySpeed={5000}
         autoplay
         effect="scrollx"
         speed={1000}

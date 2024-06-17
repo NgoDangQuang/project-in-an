@@ -1,7 +1,7 @@
-import { Col, Image, Row } from "antd";
+import { PhoneOutlined } from "@ant-design/icons";
+import { Image } from "antd";
 import { member } from "../../utils";
 import "./../../scss/Member.scss";
-import { PhoneOutlined } from "@ant-design/icons";
 
 export const Member = () => {
   return (
@@ -11,7 +11,7 @@ export const Member = () => {
         <div className="member-groups">
           {member?.map((item) => {
             return (
-              <div className="member-item">
+              <div className="member-item-123">
                 <div className="avt">
                   <Image src={item?.avt} />
                 </div>

@@ -1,14 +1,12 @@
 .calculator-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 20px;
 }
 
 .calculator {
-    width: 1300px;
     border-top: 2px solid var(--text-color);
     background-color: white;
+    padding: 50px 100px;
+
     .title {
         padding: 10px 0px;
         border-bottom: 1px solid #cccccc;
@@ -17,28 +15,33 @@
         color: var(--text-color);
         font-weight: 600;
     }
+
     .infor {
         margin: 0 auto;
-        width: 700px;
         padding: 20px;
         display: flex;
         flex-direction: column;
         gap: 20px;
+
         .item-input {
             display: flex;
             align-items: center;
             justify-content: start;
+
             .name {
                 width: 30%;
                 padding-right: 10px;
             }
+
             .input {
                 width: 70%;
                 border-radius: 3px;
+
                 .ant-select-selector {
                     border-radius: 3px;
                 }
             }
+
             .button {
                 padding: 0px 30px;
                 color: var(--text-color);
@@ -53,10 +56,57 @@
                     border: none;
                 }
             }
+
             .result {
                 font-size: 24px;
                 font-weight: 600;
                 color: var(--text-color);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .calculator-container {
+        .calculator {
+            padding: 50px;
+
+            .infor {
+
+                .item-input {
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .name {
+                        width: 100%;
+                        padding-right: 0px;
+                    }
+
+                    .input {
+                        width: 100%;
+
+                    }
+
+                    .button {
+                        width: 100%;
+                        background-color: var(--text-color);
+                        color: white;
+                        font-weight: 500;
+                        padding: 10px 30px;
+                        font-size: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        span {
+                            display: inline-block;
+                        }
+                    }
+
+                    .result {
+                        font-size: 20px;
+                    }
+                }
             }
         }
     }

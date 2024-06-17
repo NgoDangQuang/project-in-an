@@ -1,21 +1,21 @@
-import { useState } from "react";
-import "./../../scss/ProductDetail.scss";
 import {
   EnvironmentOutlined,
   MailOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
-import { NewProducts } from "../../utils/newProducts";
-import { LayoutProduct } from "./LayoutProduct";
-import Carousel from "react-multi-carousel";
 import { Image } from "antd";
-import PricingForm from "./PricingProduct";
-import { DataCalculator } from "../../utils/dataCalculator";
+import { useState } from "react";
+import Carousel from "react-multi-carousel";
+import { useParams } from "react-router-dom";
+import { Products } from "../../utils";
+import "./../../scss/ProductDetail.scss";
+import { LayoutProduct } from "./LayoutProduct";
 
-export const ProductDetail = ({ data, relatedData }) => {
-  console.log("🚀 ~ ProductDetail ~ relatedData:", relatedData);
+export const ProductDetail = (dataProducts) => {
+  const { itemId } = useParams();
+  const data = Object.values(dataProducts).find((item) => item.url === itemId);
+
   const [showImg, setShowImg] = useState(0);
-  console.log("🚀 ~ ProductDetail ~ showImg:", showImg);
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -102,10 +102,10 @@ export const ProductDetail = ({ data, relatedData }) => {
             </div>
           </div>
         </div>
-        <div className="product-container">
-          <div className="product-page">
+        <div className="product-related-container">
+          <div className="product-related-page">
             <div className="title">SẢN PHẨM KHÁC</div>
-            <LayoutProduct data={Object.values(NewProducts)} />
+            <LayoutProduct data={Object.values(Products)} />
           </div>
         </div>
       </div>

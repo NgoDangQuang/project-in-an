@@ -6,8 +6,7 @@ import { CarouselSlider } from "./Carousel";
 import { Information } from "./Information";
 import { SliderProduct } from "./SliderProduct";
 import { DataSlider } from "../../utils/sliderBanner";
-import { DataFlashSale } from "../../utils/flashSaleData";
-import { DataHotProduct } from "../../utils/hotProduct";
+import { DataFlashSale, DataHotProduct } from "../../utils";
 
 export const Home = () => {
   return (
@@ -18,7 +17,9 @@ export const Home = () => {
           <img src={banner} alt="banner" />
         </Link>
       </div>
-      <SliderProduct data={DataFlashSale} title="FLASH SALE" />
+      <div className="slider-flash-sale">
+        <SliderProduct data={DataFlashSale} title="FLASH SALE" />
+      </div>
       <SliderProduct data={DataHotProduct} title="SẢN PHẨM HOT" />
       <Information />
       <Calculator />

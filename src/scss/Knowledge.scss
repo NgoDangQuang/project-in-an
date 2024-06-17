@@ -1,0 +1,63 @@
+.knowledge-page {
+    background-color: white;
+    padding: 50px 100px;
+}
+
+.title-page {
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.list-data {
+    // max-width: 1300px;
+    overflow: hidden;
+
+    .item {
+        overflow: hidden;
+        width: 100%;
+
+        .image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border: 1px solid wheat;
+            border-radius: 5px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+
+        .title {
+            font-size: 16px;
+            color: var(--text-color);
+            font-weight: 600;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .description {
+            padding: 0px 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            text-align: justify;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .knowledge-page {
+        padding: 50px;
+    }
+}

@@ -1,16 +1,23 @@
 .product-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px 40px;
     background-color: white;
 }
+
 .product-page {
-    width: 1300px;
+    padding: 50px 100px;
+
     .title {
-        padding: 20px 10px;
         font-size: 20px;
         color: var(--text-color);
         font-weight: 600;
+        border-bottom: 2px solid var(--text-color);
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .product-container {
+        .product-page {
+            padding: 50px;
+        }
     }
 }

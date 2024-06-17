@@ -1,18 +1,33 @@
 .home-page {
     background-color: #e1e1e1;
+
     .banner {
-        width: 1300px;
-        margin: 0 auto;
-        margin-top: 20px;
+        margin: 20px auto;
         overflow: hidden;
+        width: 90%;
+
         img {
             width: 100%;
         }
+
         &:hover {
             img {
                 transition: 0.3s all ease-out;
                 scale: 1.05;
             }
+        }
+    }
+
+    .slider-flash-sale {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-page {
+        .banner {
+            width: 95%;
+            margin: 10px auto;
         }
     }
 }

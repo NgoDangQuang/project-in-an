@@ -1,38 +1,41 @@
 .footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 20px;
     background-color: white;
 }
 
 .footer {
-    width: 1300px;
-    padding: 50px 0px 20px;
     display: flex;
     justify-content: space-between;
+    padding: 50px 100px;
+
     .infor-groups {
         display: flex;
         flex-direction: column;
         gap: 40px;
+
         .infor-item {
             display: flex;
             flex-direction: column;
             gap: 15px;
+
             .title {
                 color: var(--text-color);
                 font-size: 22px;
-                font-weight: 60k0;
+                font-weight: 600;
             }
+
             .company-name {
                 font-size: 26px;
             }
+
             .content {
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 500;
+
                 a {
                     text-decoration: none;
                     color: black;
+
                     &:hover {
                         transition: 0.4s color ease;
                         color: var(--text-color);
@@ -41,14 +44,57 @@
             }
         }
     }
+
     .google-map {
         height: 400px;
         width: 60%;
-        background-color: pink;
+
         .google-iframe {
             width: 100%;
             height: 100%;
             border: none;
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .footer-container>.footer {
+        padding: 50px 50px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer-container>.footer {
+        display: block;
+
+        .infor-groups {
+            .infor-item {
+                gap: 5px;
+
+                .title {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .google-map {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-container>.footer {
+
+        .infor-groups {
+            .infor-item {
+                .title {
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
 }

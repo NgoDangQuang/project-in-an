@@ -8,7 +8,10 @@ import { NotFound } from "./screen/NotFound/NotFound";
 import { Product } from "./screen/Products/Product";
 import { ProductDetail } from "./screen/Products/ProductDetail";
 import { Sticker } from "./screen/Sticker/Sticker";
-import { NewProducts } from "./utils/newProducts";
+import { KienThucInAn } from "./utils/kienThucInAn";
+import { KienThucInAnDetail } from "./screen/Knowledge/KienThucInAnDetail";
+import { Products } from "./utils";
+import { TemNhanDecal } from "./utils/temNhanDecal";
 
 function App() {
   return (
@@ -21,12 +24,16 @@ function App() {
           <Route path="kien-thuc-in-an" element={<Knowledge />} />
           <Route path="lien-he" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
+          <Route
+            path={"san-pham/:itemId"}
+            element={<ProductDetail dataProducts={Products} />}
+          />
 
-          {Object.values(NewProducts)?.map((product) => (
+          {Object.values(KienThucInAn)?.map((item) => (
             <Route
-              key={product?.url}
-              path={`san-pham/${product?.url}`}
-              element={<ProductDetail data={product} />}
+              key={item?.url}
+              path={`kien-thuc-in-an/${item?.url}`}
+              element={<KienThucInAnDetail data={item} />}
             />
           ))}
         </Route>

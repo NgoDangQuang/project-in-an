@@ -36,58 +36,6 @@ import { CheckOutlined, TeamOutlined, TruckOutlined } from "@ant-design/icons";
 //   },
 // ];
 
-export const DataFlashSale = [
-  {
-    img: fs1,
-    imgSecond: fs2,
-    alt: "fs1",
-    title: "Nhãn decal giấy",
-    link: "/san-pham/nhan-decal-giay",
-  },
-  {
-    imgSecond: fs2,
-    img: fs3,
-    alt: "fs2",
-    title: "Nhãn decal giấy",
-    link: "/san-pham/nhan-decal-giay",
-  },
-  {
-    img: fs3,
-    imgSecond: fs2,
-    alt: "fs3",
-    title: "Nhãn decal giấy",
-    link: "/san-pham/nhan-decal-giay",
-  },
-  {
-    img: fs4,
-    imgSecond: fs2,
-    alt: "fs4",
-    title: "Nhãn decal giấy",
-    link: "/san-pham/nhan-decal-giay",
-  },
-  {
-    img: fs5,
-    imgSecond: fs2,
-    alt: "fs5",
-    title: "Nhãn decal giấy",
-    link: "/san-pham/nhan-decal-giay",
-  },
-  {
-    img: fs6,
-    imgSecond: fs2,
-    alt: "fs6",
-    title: "Nhãn decal giấy",
-    link: "/san-pham/nhan-decal-giay",
-  },
-  {
-    img: fs7,
-    imgSecond: fs2,
-    alt: "fs7",
-    title: "Nhãn decal giấy",
-    link: "/san-pham/nhan-decal-giay",
-  },
-];
-
 export const reasons = [
   {
     icon: <CheckOutlined className="icon" />,

@@ -8,7 +8,7 @@ export const Information = () => {
         <div className="layout-tile flex">
           <div className="title">VÌ SAO CHỌN CHÚNG TÔI</div>
         </div>
-        <div className="reasons flex">
+        <div className="reasons">
           {reasons?.map((item) => {
             return (
               <div className="item flex">
