@@ -1,3 +1,105 @@
+// .kien-thuc-in-an-detail-layout {
+//     background-color: white;
+//     padding: 50px 100px;
+
+//     .kien-thuc-in-an-detail {
+
+//         .title-page-detail {
+//             font-size: 20px;
+//             color: var(--text-color);
+//             font-weight: 600;
+//             text-transform: uppercase;
+//         }
+
+//         .divider {
+//             width: 100%;
+//             height: 2px;
+//             background-color: rgba(158, 147, 147, 0.247);
+//             margin: 20px 0px;
+//         }
+
+//         .layout-content {
+//             display: flex;
+//             justify-content: space-between;
+//             width: 100%;
+//             gap: 50px;
+
+//             .contents-page {
+//                 width: 65%;
+//                 order: 1;
+//             }
+
+//             .muc-luc {
+//                 width: 35%;
+//                 background-color: #F4F4F4;
+//                 border: 1px solid black;
+//                 height: fit-content;
+//                 padding: 10px;
+//                 border-radius: 8px;
+//                 order: 2;
+
+//                 .title-muc-luc {
+//                     display: flex;
+//                     align-items: center;
+//                     gap: 5px;
+//                     margin-bottom: 10px;
+
+//                     .icon-menu {
+//                         font-size: 20px;
+//                         color: black;
+//                     }
+
+//                     .text {
+//                         font-size: 22px;
+//                         font-weight: 600;
+//                     }
+//                 }
+
+//                 .item-muc-luc {
+//                     margin-bottom: 5px;
+//                 }
+
+//                 .muc-luc-level-one {
+//                     font-weight: 500;
+//                     font-size: 16px;
+//                     margin-left: 0px;
+//                 }
+
+//                 .muc-luc-level-two {
+//                     margin-left: 30px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// @media (max-width: 1024px) {
+//     .kien-thuc-in-an-detail-layout {
+//         padding: 50px;
+
+//         .kien-thuc-in-an-detail {
+
+//             .layout-content {
+//                 flex-direction: column;
+//                 gap: 20px;
+
+//                 .contents-page {
+//                     width: 100%;
+//                     order: 2;
+//                 }
+
+//                 .muc-luc {
+//                     width: 100%;
+//                     order: 1;
+//                 }
+//             }
+//         }
+//     }
+
+// }
+
+
 .kien-thuc-in-an-detail-layout {
     background-color: white;
     padding: 50px 100px;
@@ -17,12 +119,111 @@
             background-color: rgba(158, 147, 147, 0.247);
             margin: 20px 0px;
         }
+
+        .layout-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 50px;
+
+            .contents-page {
+                width: 65%;
+                order: 1;
+            }
+
+            .muc-luc {
+                width: 35%;
+                background-color: #F4F4F4;
+                border: 1px solid black;
+                height: fit-content;
+                border-radius: 8px;
+                position: sticky;
+                top: 20px;
+                order: 2;
+
+                .title-muc-luc {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    padding: 10px 20px;
+
+                    .text-muc-luc {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                    }
+
+                    .icon-menu {
+                        font-size: 20px;
+                        color: black;
+                    }
+
+                    .text {
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                }
+
+                .content-muc-luc {
+                    margin-top: 0px;
+                    padding-right: 10px;
+                }
+
+                .item-muc-luc {
+                    margin-bottom: 5px;
+                    transition: all 0.3s;
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: #006DD0;
+                        }
+                    }
+
+                    &:hover {
+                        color: #006DD0
+                    }
+                }
+
+                .muc-luc-level-one {
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-left: 0px;
+                }
+
+                .muc-luc-level-two {
+                    margin-left: 30px;
+                }
+            }
+        }
     }
 }
 
-
 @media (max-width: 1024px) {
     .kien-thuc-in-an-detail-layout {
-        padding: 50px;
+        padding: 20px 50px 50px;
+
+        .kien-thuc-in-an-detail {
+
+            .layout-content {
+                flex-direction: column;
+                gap: 20px;
+
+                .contents-page {
+                    width: 100%;
+                    order: 2;
+                }
+
+                .muc-luc {
+                    width: 100%;
+                    position: static;
+                    order: 1;
+                }
+            }
+        }
     }
 }

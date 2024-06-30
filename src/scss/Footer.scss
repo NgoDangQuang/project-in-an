@@ -16,7 +16,7 @@
         .infor-item {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 10px;
 
             .title {
                 color: var(--text-color);
@@ -25,12 +25,13 @@
             }
 
             .company-name {
-                font-size: 26px;
+                font-size: 22px;
             }
 
             .content {
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 500;
+                margin-bottom: 0px;
 
                 a {
                     text-decoration: none;

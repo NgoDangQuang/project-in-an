@@ -113,6 +113,20 @@ import an_pham_qc_06 from "./../asset/img/products-image/an-pham-quang-cao/6.png
 import an_pham_qc_07 from "./../asset/img/products-image/an-pham-quang-cao/7.png";
 import an_pham_qc_08 from "./../asset/img/products-image/an-pham-quang-cao/8.jpg";
 import an_pham_qc_09 from "./../asset/img/products-image/an-pham-quang-cao/9.jpg";
+import { BaoLiXi } from "./ChiTietSanPham/baoLiXi";
+import { BaoThu } from "./ChiTietSanPham/baoThu";
+import { BrochureCatalogueProfile } from "./ChiTietSanPham/brochureCatalogueProfile";
+import { DanhThiep } from "./ChiTietSanPham/danhThiep";
+import { HopCung } from "./ChiTietSanPham/hopCung";
+import { HopMem } from "./ChiTietSanPham/hopMem";
+import { Lich } from "./ChiTietSanPham/lich";
+import { SoTay } from "./ChiTietSanPham/soTay";
+import { temNhanDecal } from "./ChiTietSanPham/temNhanDecal";
+import { ToRoiToGap } from "./ChiTietSanPham/toRoiToGap";
+import { TuiGiay } from "./ChiTietSanPham/tuiGiay";
+import { ThiepCuoiThiepMoiThiepChucTet } from "./ChiTietSanPham/thiepCuoiThiepMoi";
+import { Voucher } from "./ChiTietSanPham/voucher";
+import { AnPhamQuangCaoKhac } from "./ChiTietSanPham/anPhamQuangCaoKhac";
 
 export const Products = {
   baoLiXi: {
@@ -126,19 +140,19 @@ export const Products = {
       li_xi_06,
       li_xi_07,
     ],
-    content: [],
+    content: BaoLiXi,
     url: "bao-li-xi",
   },
   baoThu: {
     title: "Bao Thư",
     imgs: [bao_thu_01, bao_thu_02, bao_thu_03, bao_thu_04, bao_thu_05],
-    content: [],
+    content: BaoThu,
     url: "bao-thu",
   },
   brochureCatalogue: {
     title: "Brochure - Catalogue - Profile",
     imgs: [brochure_01, brochure_02, brochure_03, brochure_04, brochure_05],
-    content: [],
+    content: BrochureCatalogueProfile,
     url: "brochure-catalogue",
   },
   danhThiep: {
@@ -150,7 +164,7 @@ export const Products = {
       danh_thiep_04,
       danh_thiep_05,
     ],
-    content: [],
+    content: DanhThiep,
     url: "danh-thiep",
   },
   hopCung: {
@@ -168,7 +182,7 @@ export const Products = {
       hop_cung_10,
       hop_cung_11,
     ],
-    content: [],
+    content: HopCung,
     url: "hop-cung",
   },
   hopMem: {
@@ -182,19 +196,19 @@ export const Products = {
       hop_mem_06,
       hop_mem_07,
     ],
-    content: [],
+    content: HopMem,
     url: "hop-mem",
   },
   lich: {
     title: "Lịch",
     imgs: [lich_01, lich_02, lich_03, lich_04, lich_05, lich_06, lich_07],
-    content: [],
+    content: Lich,
     url: "lich",
   },
   soTay: {
     title: "Sổ Tay",
     imgs: [so_tay_01, so_tay_02, so_tay_03, so_tay_04, so_tay_05, so_tay_06],
-    content: [],
+    content: SoTay,
     url: "so-tay",
   },
   temNhanDecal: {
@@ -211,13 +225,13 @@ export const Products = {
       tem_nhan_decal_09,
       tem_nhan_decal_10,
     ],
-    content: [],
+    content: temNhanDecal,
     url: "tem-nhan-decal",
   },
   toRoiToGap: {
     title: "Tờ Rơi - Tờ Gấp - Giấy Tiêu Đề",
     imgs: [to_roi_01, to_roi_02, to_roi_03, to_roi_04, to_roi_05, to_roi_06],
-    content: [],
+    content: ToRoiToGap,
     url: "to-roi-to-gap-giay-tieu-de",
   },
   tuiGiay: {
@@ -233,7 +247,7 @@ export const Products = {
       tui_giay_08,
       tui_giay_09,
     ],
-    content: [],
+    content: TuiGiay,
     url: "tui-giay",
   },
   thiepCuoi: {
@@ -249,7 +263,7 @@ export const Products = {
       thiep_cuoi_08,
       thiep_cuoi_09,
     ],
-    content: [],
+    content: ThiepCuoiThiepMoiThiepChucTet,
     url: "thiep-cuoi-thiep-moi-thiep-chuc-tet",
   },
   voucher: {
@@ -262,7 +276,7 @@ export const Products = {
       voucher_05,
       voucher_06,
     ],
-    content: [],
+    content: Voucher,
     url: "voucher",
   },
   anPhamQuangCao: {
@@ -278,7 +292,7 @@ export const Products = {
       an_pham_qc_08,
       an_pham_qc_09,
     ],
-    content: [],
+    content: AnPhamQuangCaoKhac,
     url: "an-pham-quang-cao-khac",
   },
 };

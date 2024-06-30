@@ -43,9 +43,6 @@ export const Header = () => {
                   <Link to="/san-pham">Sản phẩm in</Link>
                 </div>
                 <div className="item">
-                  <Link to="/tem-nhan">Tem nhãn</Link>
-                </div>
-                <div className="item">
                   <Link to="/kien-thuc-in-an">Kiến thức về in ấn</Link>
                 </div>
                 <div className="item">
@@ -83,11 +80,6 @@ export const Header = () => {
               <div className="item">
                 <Link onClick={() => setIsVisible(false)} to="/san-pham">
                   Sản phẩm in
-                </Link>
-              </div>
-              <div className="item">
-                <Link onClick={() => setIsVisible(false)} to="/tem-nhan">
-                  Tem nhãn
                 </Link>
               </div>
               <div className="item">

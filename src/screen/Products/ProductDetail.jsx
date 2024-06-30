@@ -10,8 +10,9 @@ import { useParams } from "react-router-dom";
 import { Products } from "../../utils";
 import "./../../scss/ProductDetail.scss";
 import { LayoutProduct } from "./LayoutProduct";
+import { Content } from "../Knowledge/Content";
 
-export const ProductDetail = (dataProducts) => {
+export const ProductDetail = ({ dataProducts }) => {
   const { itemId } = useParams();
   const data = Object.values(dataProducts).find((item) => item.url === itemId);
 
@@ -44,6 +45,7 @@ export const ProductDetail = (dataProducts) => {
               <div className="image">
                 <Image src={data?.imgs[showImg]} preview />
               </div>
+
               <div className="img-preview">
                 <Carousel
                   responsive={responsive}
@@ -73,15 +75,16 @@ export const ProductDetail = (dataProducts) => {
 
           <div className="product-content">
             <div className="title-detail">CHI TIẾT SẢN PHẨM</div>
-            <div className="content">Chi tiết sản phẩm</div>
+            <div className="content">
+              {data?.content?.map((item, index) => {
+                return <Content key={index} data={item} id={item?.id} />;
+              })}
+            </div>
           </div>
 
           <div className="price">
-            {/* <PricingForm data={DataCalculator} /> */}
             <div className="contact">
-              <div className="contact-title">
-                LIÊN HỆ TƯ VẤN - GỞI FILE ĐẶT IN
-              </div>
+              <div className="contact-title">LIÊN HỆ TƯ VẤN</div>
               <div className="company-contact">
                 <div className="name">CÔNG TY CỔ PHẦN IN AN NHÂN</div>
                 <div className="content">

@@ -3,21 +3,24 @@ export const Content = ({ data }) => {
   switch (data?.type) {
     case "CONTENT": {
       return (
-        <div className={`content ${data?.specialType} ${data?.level}`}>
-          {data?.content}
-        </div>
+        <div
+          dangerouslySetInnerHTML={{ __html: data?.content }}
+          className={`content ${data?.specialType} ${data?.level}`}
+          id={data?.id}
+        ></div>
       );
     }
 
     case "LIST_CONTENT": {
-      console.log("data: ", data?.list_content);
       return (
         <ul>
-          {data?.list_content?.map((item) => {
+          {data?.list_contents?.map((item) => {
             return (
-              <li className={`content ${data?.level} ${data?.specialType}`}>
-                {item}
-              </li>
+              <li
+                className={`content ${data?.level} ${data?.specialType}`}
+                id={data?.id}
+                dangerouslySetInnerHTML={{ __html: item }}
+              ></li>
             );
           })}
         </ul>

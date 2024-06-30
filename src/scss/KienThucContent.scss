@@ -9,8 +9,8 @@
 }
 
 .ONE {
-    margin-bottom: 30px;
     text-align: justify;
+    color: rgba(0, 0, 0, 0.658);
 }
 
 
@@ -22,7 +22,10 @@
 .THREE {
     font-size: 20px;
     font-weight: 700;
-    color: rgba(6, 114, 236, 0.815);
+}
+
+.BOLD {
+    font-weight: 500;
 }
 
 .image {
@@ -36,6 +39,6 @@
     }
 }
 
-.list {
+.LIST {
     margin-bottom: 10px;
 }

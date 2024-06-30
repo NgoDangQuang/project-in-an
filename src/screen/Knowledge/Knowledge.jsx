@@ -13,7 +13,7 @@ export const Knowledge = () => {
             <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4}>
               <div className="item">
                 <Link to={item?.url}>
-                  <div className="image">
+                  <div className="image-thumnail">
                     <img src={item?.img} alt="" />
                   </div>
                   <div className="title">{item?.title}</div>

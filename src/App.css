@@ -4,3 +4,7 @@
   /* --text-color: #ed1b24; */
   --text-color: #ff3300;
 }
+
+html {
+  scroll-behavior: smooth;
+}
